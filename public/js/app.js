@@ -21,8 +21,8 @@ wtServices
       // Retrieve current weather
       current: function (latitude, longitude) {
         // Comment the next line and uncomment the following block to retrieve data from the backend
-        return $q.when({});
-        /*
+ //       return $q.when({});
+        
         var deferred = $q.defer();
         $http.get("/api/1/current.json?lat=" + encodeURIComponent(latitude) + "&lon=" + encodeURIComponent(longitude))
           .success(function (data) {
@@ -32,13 +32,13 @@ wtServices
             deferred.reject();
           });
         return deferred.promise;
-        */
+        
       },
       // Retrieve 10 day forecast
       forecast: function (latitude, longitude) {
         // Comment the next line and uncomment the following block to retrieve data from the backend
-        return $q.when({});
-        /*
+ //       return $q.when({});
+        
         var deferred = $q.defer();
         $http.get("/api/1/forecast.json?lat=" + encodeURIComponent(latitude) + "&lon=" + encodeURIComponent(longitude))
           .success(function (data) {
@@ -48,7 +48,7 @@ wtServices
             deferred.reject();
           });
         return deferred.promise;
-        */
+        
       }
     };
   }])
@@ -57,8 +57,8 @@ wtServices
       // Retrieve tweets for location
       tweets: function (query) {
         // Comment the next line and uncomment the following block to retrieve data from the backend
-        return $q.when([]);
-        /*
+        //return $q.when([]);
+        
         var deferred = $q.defer();
         $http.get("/api/1/tweets.json?query=" + encodeURIComponent(query))
           .success(function (data) {
@@ -68,7 +68,7 @@ wtServices
             deferred.reject();
           });
         return deferred.promise;
-        */
+        
       }
     };
   }]);

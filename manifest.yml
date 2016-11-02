@@ -10,5 +10,5 @@ applications:
 - services:
   - places-twitterinsights
   - places-weatherinsights
-  name:       places-insights-lab
-  host:       places-insights-lab
+  name:       places-insights-lab-akareh
+  host:       places-insights-lab-akareh
